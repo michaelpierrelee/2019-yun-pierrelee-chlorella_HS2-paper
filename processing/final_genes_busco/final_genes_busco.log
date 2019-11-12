@@ -1,0 +1,51 @@
+nohup: ignoring input
+WARNING	You are using a custom e-value cutoff
+INFO	****************** Start a BUSCO 3.0.2 analysis, current time: 10/24/2019 15:26:10 ******************
+INFO	Configuration loaded from /home/pierrelee/miniconda3/envs/hs2_transcriptome_env/bin/../config/config.ini
+INFO	Init tools...
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	To reproduce this run: python /home/pierrelee/miniconda3/envs/hs2_transcriptome_env/bin/run_busco -i final_genes_busco/final_used_genes.fasta -o final_genes_busco -l ../databases/busco-prerelease_chlorophyta_odb10/ -m transcriptome -c 16 --long -e 1e-10
+INFO	Mode is: transcriptome
+INFO	The lineage dataset is: chlorophyta_odb10 (eukaryota)
+INFO	Temp directory is ./tmp/
+INFO	****** Step 1/2, current time: 10/24/2019 15:26:11 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 10/24/2019 15:26:11
+INFO	[makeblastdb]	New DB name:   /media/hdd/pierrelee/korea_hs2/tmp/final_genes_busco_3482060338
+INFO	[makeblastdb]	New DB title:  final_genes_busco/final_used_genes.fasta
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 10263 sequences in 1.11436 seconds.
+INFO	[makeblastdb]	1 of 1 task(s) completed at 10/24/2019 15:26:12
+INFO	Running tblastn, writing output to /media/hdd/pierrelee/korea_hs2/run_final_genes_busco/blast_output/tblastn_final_genes_busco.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 10/24/2019 15:36:15
+INFO	****** Step 2/2, current time: 10/24/2019 15:36:15 ******
+INFO	Maximum number of candidate transcript per BUSCO limited to: 3
+INFO	Getting coordinates for candidate transcripts...
+INFO	Extracting candidate transcripts...
+INFO	Translating candidate transcripts...
+INFO	Running HMMER to confirm transcript orthology:
+INFO	[hmmsearch]	361 of 3602 task(s) completed at 10/24/2019 15:36:52
+INFO	[hmmsearch]	721 of 3602 task(s) completed at 10/24/2019 15:36:56
+INFO	[hmmsearch]	1441 of 3602 task(s) completed at 10/24/2019 15:37:03
+INFO	[hmmsearch]	2522 of 3602 task(s) completed at 10/24/2019 15:37:13
+INFO	[hmmsearch]	3602 of 3602 task(s) completed at 10/24/2019 15:37:22
+INFO	Results:
+INFO	C:38.8%[S:9.7%,D:29.1%],F:3.6%,M:57.6%,n:2168
+INFO	840 Complete BUSCOs (C)
+INFO	210 Complete and single-copy BUSCOs (S)
+INFO	630 Complete and duplicated BUSCOs (D)
+INFO	79 Fragmented BUSCOs (F)
+INFO	1249 Missing BUSCOs (M)
+INFO	2168 Total BUSCO groups searched
+INFO	BUSCO analysis done with WARNING(s). Total running time: 672.6103627681732 seconds
+INFO	Results written in /media/hdd/pierrelee/korea_hs2/run_final_genes_busco/
+
+INFO	****************** Start plot generation at 10/24/2019 15:37:23 ******************
+INFO	Load data ...
+WARNING	No short summary found in final_genes_busco/
+ERROR	Plot generation failed !
+INFO	Check the logs, read the user guide, if you still need technical support, then please contact mailto:support@orthodb.org
+

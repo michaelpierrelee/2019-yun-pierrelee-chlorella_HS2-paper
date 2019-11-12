@@ -1,0 +1,15 @@
+# BUSCO version is: 3.0.2 
+# The lineage dataset is: chlorophyta_odb10 (Creation date: 2017-12-01, number of species: 10, number of BUSCOs: 2168)
+# To reproduce this run: python /home/pierrelee/miniconda3/envs/hs2_transcriptome_env/bin/run_busco -i trinity_assembly/Trinity.fasta -o busco_hs2_trinity -l ../databases/busco-prerelease_chlorophyta_odb10/ -m transcriptome -c 16 --long -e 1e-10
+#
+# Summarized benchmarking in BUSCO notation for file trinity_assembly/Trinity.fasta
+# BUSCO was run in mode: transcriptome
+
+	C:89.4%[S:20.0%,D:69.4%],F:6.3%,M:4.3%,n:2168
+
+	1938	Complete BUSCOs (C)
+	433	Complete and single-copy BUSCOs (S)
+	1505	Complete and duplicated BUSCOs (D)
+	136	Fragmented BUSCOs (F)
+	94	Missing BUSCOs (M)
+	2168	Total BUSCO groups searched

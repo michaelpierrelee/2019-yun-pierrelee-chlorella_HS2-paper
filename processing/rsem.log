@@ -1,0 +1,19 @@
+nohup: ignoring input
+-reading file: rsem_quantification/TN1610R1293-1/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1293/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1294/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1295/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1296/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1297/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1299-1/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1299-2/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1299/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1301/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1302/RSEM.isoforms.results
+-reading file: rsem_quantification/TN1610R1303/RSEM.isoforms.results
+
+
+* Outputting combined matrix.
+
+-not performing cross-sample normalization.
+-not performing cross-sample normalization.

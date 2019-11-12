@@ -1,0 +1,58 @@
+nohup: ignoring input
+WARNING	You are using a custom e-value cutoff
+INFO	****************** Start a BUSCO 3.0.2 analysis, current time: 08/19/2019 17:07:23 ******************
+INFO	Configuration loaded from /home/pierrelee/miniconda3/envs/hs2_transcriptome_env/bin/../config/config.ini
+INFO	Init tools...
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	To reproduce this run: python /home/pierrelee/miniconda3/envs/hs2_transcriptome_env/bin/run_busco -i trinity_assembly/Trinity.fasta -o busco_hs2_trinity -l ../databases/busco-prerelease_chlorophyta_odb10/ -m transcriptome -c 16 --long -e 1e-10
+INFO	Mode is: transcriptome
+INFO	The lineage dataset is: chlorophyta_odb10 (eukaryota)
+INFO	Delete the current result folder and start a new run
+INFO	Temp directory is ./tmp/
+INFO	****** Step 1/2, current time: 08/19/2019 17:07:24 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 08/19/2019 17:07:24
+INFO	[makeblastdb]	New DB name:   /media/hdd/pierrelee/korea_hs2/tmp/busco_hs2_trinity_1776223238
+INFO	[makeblastdb]	New DB title:  trinity_assembly/Trinity.fasta
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 103539 sequences in 6.34873 seconds.
+INFO	[makeblastdb]	1 of 1 task(s) completed at 08/19/2019 17:07:31
+INFO	Running tblastn, writing output to /media/hdd/pierrelee/korea_hs2/run_busco_hs2_trinity/blast_output/tblastn_busco_hs2_trinity.tsv...
+INFO	[tblastn]	1 of 1 task(s) completed at 08/19/2019 17:42:34
+INFO	****** Step 2/2, current time: 08/19/2019 17:42:34 ******
+INFO	Maximum number of candidate transcript per BUSCO limited to: 3
+INFO	Getting coordinates for candidate transcripts...
+INFO	Extracting candidate transcripts...
+INFO	Translating candidate transcripts...
+INFO	Running HMMER to confirm transcript orthology:
+INFO	[hmmsearch]	1203 of 6012 task(s) completed at 08/19/2019 17:44:12
+INFO	[hmmsearch]	1804 of 6012 task(s) completed at 08/19/2019 17:44:17
+INFO	[hmmsearch]	2405 of 6012 task(s) completed at 08/19/2019 17:44:23
+INFO	[hmmsearch]	4209 of 6012 task(s) completed at 08/19/2019 17:44:40
+INFO	[hmmsearch]	5411 of 6012 task(s) completed at 08/19/2019 17:44:51
+INFO	[hmmsearch]	6012 of 6012 task(s) completed at 08/19/2019 17:44:55
+INFO	Results:
+INFO	C:89.4%[S:20.0%,D:69.4%],F:6.3%,M:4.3%,n:2168
+INFO	1938 Complete BUSCOs (C)
+INFO	433 Complete and single-copy BUSCOs (S)
+INFO	1505 Complete and duplicated BUSCOs (D)
+INFO	136 Fragmented BUSCOs (F)
+INFO	94 Missing BUSCOs (M)
+INFO	2168 Total BUSCO groups searched
+INFO	BUSCO analysis done with WARNING(s). Total running time: 2253.0755586624146 seconds
+INFO	Results written in /media/hdd/pierrelee/korea_hs2/run_busco_hs2_trinity/
+
+INFO	****************** Start plot generation at 08/19/2019 17:44:56 ******************
+INFO	Load data ...
+INFO	Loaded short_summary_busco_hs2_trinity.txt successfully
+INFO	Generate the R code ...
+INFO	Run the R code ...
+INFO	[Rscript]	[1] "Plotting the figure ..."
+INFO	[Rscript]	[1] "Done"
+INFO	[Rscript]	1 of 1 task(s) completed at 08/19/2019 17:44:59
+INFO	Plot generation done. Total running time: 2.6016759872436523 seconds
+INFO	Results written in run_busco_hs2_trinity/
+

@@ -1,0 +1,9 @@
+nohup: ignoring input
+SignalP-5.0. Starting fasta file reading...
+Total proteins read: 89444.
+Organism: euk.
+Starting protein prediction...
+Temporary directory: /tmp/signalp5.078836668
+Protein prediction done!
+Generating output files...
+Completed.

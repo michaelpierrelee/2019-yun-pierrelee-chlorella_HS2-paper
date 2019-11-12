@@ -1,0 +1,21 @@
+Statistics:
+===========
+Trinity Version:      Trinity-v2.8.5
+Compiler:             GCC
+Trinity Parameters:   --seqType fq --left fastq/TN1610R1293-1_1.fq,fastq/TN1610R1293_1.fq,fastq/TN1610R1294_1.fq,fastq/TN1610R1295_1.fq,fastq/TN1610R1296_1.fq,fastq/TN1610R1297_1.fq,fastq/TN1610R1299-1_1.fq,fastq/TN1610R1299_1.fq,fastq/TN1610R1299-2_1.fq,fastq/TN1610R1301_1.fq,fastq/TN1610R1302_1.fq,fastq/TN1610R1303_1.fq --right fastq/TN1610R1293-1_2.fq,fastq/TN1610R1293_2.fq,fastq/TN1610R1294_2.fq,fastq/TN1610R1295_2.fq,fastq/TN1610R1296_2.fq,fastq/TN1610R1297_2.fq,fastq/TN1610R1299-1_2.fq,fastq/TN1610R1299-2_2.fq,fastq/TN1610R1299_2.fq,fastq/TN1610R1301_2.fq,fastq/TN1610R1302_2.fq,fastq/TN1610R1303_2.fq --output trinity_assembly --CPU 16 --max_memory 28G --monitoring
+Paired mode
+ Input data
+  Left.fasta    3421 MByte
+  Right.fasta   3421 MByte
+  Number of unique KMERs: 330322127
+  Number of reads:        49286350 Output data
+  Trinity.fasta 202 MByte
+
+Runtime
+=======
+Start:       Tue Aug 13 16:39:05 CEST 2019
+End:         Wed Aug 14 13:28:15 CEST 2019
+Trinity   74950 seconds
+  Inchworm (phase 1 - read clustering)  2991 seconds
+  Chrysalis (phase 1 - read clustering) 55692 seconds
+  Rest (phase 2 - parallel assembly)       16267 seconds
