@@ -14,6 +14,7 @@ More information can be found at the beginning of each notebook, where the heade
 [TOC]
 
 ## Setup working environment
+
 Data processing, as well as analysis with Python and R, was performed within conda environments.
 
 ### Install conda
@@ -228,7 +229,7 @@ Trinotate degs_annotation/trinotate_db/Trinotate.sqlite report -E 1e-10 > degs_a
 ## Data exploration
 
 4. **Aggregation of annotations to get dysregulated KEGG orthologies:** `4-aggregation.py.ipynb` within `hs2_python_env`.
-5. **Functional enrichment of KEGG PATHWAY and BRITE databases:** `5-enrichment.py.ipynb` within `hs2_python_env`.
+5. **Functional enrichment of KEGG PATHWAY and BRITE databases:** `5-KEGG_enrichment.py.ipynb` within `hs2_python_env`.
 6. **Extraction of Bowtie2 and MultiQC results and comparison of KEGG and Blast2GO pipelines results:** `6-pipeline_comparison.py.ipynb` within `hs2_python_env`.
 
 ## Blast2GO pipeline
@@ -254,3 +255,7 @@ nohup ~/miniconda3/envs/hs2_transcriptome_env/opt/TRINITY_HOME/Analysis/SuperTra
 ### Comparison of pipeline results
 
 Then, execute the following *IPython* notebook: `6-pipeline_comparison.py.ipynb` within `hs2_python_env`.
+
+### Functional enrichment
+
+See `5-GO_enrichment.py.ipynb` within `hs2_python_env`. The OBO file of gene ontologies has to be downloaded from http://release.geneontology.org/2019-10-07/ontology/go-basic.obo or, for the latest release, http://purl.obolibrary.org/obo/go/go-basic.obo.
