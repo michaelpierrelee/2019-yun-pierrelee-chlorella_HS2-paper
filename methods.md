@@ -40,13 +40,15 @@ conda install python ipykernel scipy numpy pandas matplotlib seaborn xlrd openpy
 
 ### Install R environment
 
+DESeq2 v.1.20.0.
+
 ```bash
 conda create -n hs2_r_env
 conda activate hs2_r_env
 conda install r r-irkernel r-devtools bioconductor-deseq2
 ```
 
-Then, to setup SVCD (`cdnormbio` package) on R:
+Then, to setup SVCD (`cdnormbio` package v0.1.0) on R:
 
 ```
 devtools::install_github("https://github.com/carlosproca/cdnormbio.git", dependencies = FALSE)
@@ -226,10 +228,13 @@ Trinotate degs_annotation/trinotate_db/Trinotate.sqlite LOAD_signalp degs_annota
 Trinotate degs_annotation/trinotate_db/Trinotate.sqlite report -E 1e-10 > degs_annotation/trinotate_annotation_report.xls
 ```
 
+Only BLAST hits with e-value lower than 1e-10 were kept in the downstream steps.
+
 ## Data exploration
 
 4. **Aggregation of annotations to get dysregulated KEGG orthologies:** `4-aggregation.py.ipynb` within `hs2_python_env`.
 5. **Functional enrichment of KEGG PATHWAY and BRITE databases:** `5-KEGG_enrichment.py.ipynb` within `hs2_python_env`.
+   1. GSEAPY v0.9.15. KEGG database release 92.0 (01-OCT 2019).
 6. **Extraction of Bowtie2 and MultiQC results and comparison of KEGG and Blast2GO pipelines results:** `6-pipeline_comparison.py.ipynb` within `hs2_python_env`.
 
 ## Blast2GO pipeline
@@ -244,11 +249,11 @@ nohup ~/miniconda3/envs/hs2_transcriptome_env/opt/TRINITY_HOME/Analysis/SuperTra
 	--out_prefix supertranscripts/trinity_genes >& supertranscripts/supertranscripts.log &
 ```
 
-### Execute Blast2GO
+### Execute BLAST2GO
 
 1. Download the software from https://www.blast2go.com/blast2go-pro/download-b2g (free v5.2.5).
 2. Load `supertranscripts/trinity_genes.fasta`.
-3. Execute Blast against `db_uniprot_sprot-31JUL2019/uniprot_sprot`.
+3. Execute Blast against `db_uniprot_sprot-31JUL2019/uniprot_sprot`. E-value threshold = 1e.10.
 4. Execute GO mapping against OBO database (vOCT2019).
 5. Export the result table into the file `blast2go_go_table.txt`.
 
@@ -259,3 +264,5 @@ Then, execute the following *IPython* notebook: `6-pipeline_comparison.py.ipynb`
 ### Functional enrichment
 
 See `5-GO_enrichment.py.ipynb` within `hs2_python_env`. The OBO file of gene ontologies has to be downloaded from http://release.geneontology.org/2019-10-07/ontology/go-basic.obo or, for the latest release, http://purl.obolibrary.org/obo/go/go-basic.obo.
+
+* GSEAPY v0.9.15. Gene-ontology OBO file (release 07-OCT-2019).
