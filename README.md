@@ -1,6 +1,18 @@
 # Scripts and data from the transcriptomics analysis of Yun 2019 RNA-sequencing dataset.
 
-See the paper on BioRxiv: https://www.biorxiv.org/content/10.1101/817551v1.
+Copy from my repo at [https://gitlab.com/habermann_lab/yun2019_hs2](https://gitlab.com/habermann_lab/yun2019_hs2).
+
+How to cite:
+
+> Yun, J.-H., Pierrelée, M., Cho, D.-H., Kim, U., Heo, J., Choi, D.-Y., Lee, Y. J., Lee, B., Kim, H., Habermann, B., Chang, Y. K., & Kim, H.-S. (2021). Transcriptomic analysis of Chlorella sp. HS2 suggests the overflow of acetyl-CoA and NADPH cofactor induces high lipid accumulation and halotolerance. Food and Energy Security, 10(1), e267. <https://doi.org/10.1002/fes3.267>
+
+---
+
+Michaël Pierrelée, Aix Marseille Univ, CNRS, IBDM, UMR7288, FRANCE
+
+*Apache License 2.0*
+
+---
 
 * `methods.md`: steps to follow to reproduce the worflow.
 * `processing/`: folder of scripts and logs from data processing of reads and annotation of transcripts.
